@@ -162,3 +162,74 @@ input {
 .hidden {
   display: none;
 }
+
+/* Footer */
+
+#footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 1em;   
+  padding: 1.5em;
+  background: rgb(145, 116, 218);
+  color: rgba(185, 186, 187, 0.5);
+  overflow: hidden;
+
+  position:absolute;
+  bottom:0;
+  width:100%;
+}
+
+  #footer > * {
+    margin-bottom: 0;
+  }
+
+  #footer a {
+    color: inherit;
+  }
+
+    #footer a:hover {
+      color: #b9babb;
+    }
+
+  #footer ul.menu {
+    margin: 0;
+  }
+
+    #footer ul.menu li {
+      border-left-color: rgba(185, 186, 187, 0.2);
+      font-size: 0.9em;
+    }
+
+  @media screen and (max-width: 1000px) {
+
+    #footer {
+      flex-direction: column;
+      justify-content: space-between;
+      line-height: 1.5em;
+      text-align: center;
+      padding: 2em 1em 2em 1em;
+    }
+
+      #footer > * {
+        margin: 0 0 1em 0;
+      }
+
+  }
+
+  @media screen and (max-width: 736px) {
+
+    #footer ul.menu li {
+      border-left: none;
+      display: block;
+      line-height: inherit;
+      margin: 0.25em 0 0 0;
+      padding: 0.25em 0 0 0;
+    }
+
+      #footer ul.menu li:first-child {
+        margin-top: 0;
+        padding-top: 0;
+      }
+
+  }
