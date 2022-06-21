@@ -20,6 +20,27 @@
 
     <h1>Price Per Pound</h1>
 
+    <div class="calc wrapper">
+      <section class="calc">
+        <form action="">
+          <label for="price">Price</label>
+          <br/>
+          <input type="text" name="price" placeholder="$0.00" id="price">
+          <br/>
+          <br/>
+          <label for="quantity">Quantity</label>
+          <br/>
+          <input type="text" name="quantity" placeholder="0" id="quantity">
+
+          <input type="radio" name="units" value="lb" id="radio-lb" checked> lb
+          <input type="radio" name="units" value="oz" id="radio-oz"> oz
+
+          <br/>
+          <br/>
+          <output name="output" id="output"></output>
+        </form>
+      </section>
+    </div>
 
 		<script type="text/javascript" src="public/main.js"></script>
 	</body>
