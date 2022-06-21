@@ -21,19 +21,17 @@
 /* BASE STYLES
 /*******************************************/
 
-html {
+html, body {
   font-family: 'Open Sans', sans-serif;
 }
 
 body {
-  background: rgb(79,79,79);
-  background: radial-gradient(circle, rgba(79,79,79,1) 21%, rgba(57,57,57,1) 100%);
+  background-color: rgb(160, 142, 206);
   font-size: 62.5%;
   color: azure;
 }
 
 .wrapper {
-  /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -63,14 +61,15 @@ output {
   text-align: center;
 }
 
-input, select {
-  background-color: white;
-  border: none;
-}
-
 input {
+  background-color: rgb(160, 142, 206);
+  border: 1px solid rgb(193, 184, 214)
   height: 2rem;
   margin: .3rem 0;
+}
+
+#radio-lb, #radio-oz {
+  border: none;
 }
 
 #price {
@@ -81,14 +80,79 @@ input {
   width: 40%;
 }
 
-select {
-  width: 10%;
-  height: 1.96rem;
-  margin: 0;
-  padding: 0;
-}
-
 [placeholder]:focus::-webkit-input-placeholder {
   transition: opacity 0.5s 0.5s ease; 
   opacity: 0;
+}
+
+/******************************************
+/* UNIT BUTTONS
+/*******************************************/
+
+.container {
+  height: 100%;
+  min-height: 100%;
+  margin: 0 auto;
+}
+
+.button-wrap {
+  position: relative;
+  text-align: center;
+  top: 50%;
+  margin-top: 2.5em;
+}
+@media (max-width: 40em) {
+  .button-wrap {
+    margin-top: 1.5em;
+  }
+}
+
+.button-label {
+  display: inline-block;
+  padding: 1em 2em;
+  margin: 0.5em;
+  cursor: pointer;
+  color: #292929ab;
+  border-radius: 0.25em;
+  background: #efefef81;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2), inset 0 -3px 0 rgba(0, 0, 0, 0.22);
+  transition: 0.3s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.button-label h1 {
+  font-size: 1em;
+  font-family: "Lato", sans-serif;
+}
+.button-label:hover {
+  background: #d6d6d6;
+  color: #101010;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2), inset 0 -3px 0 rgba(0, 0, 0, 0.32);
+}
+.button-label:active {
+  transform: translateY(2px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2), inset 0px -1px 0 rgba(0, 0, 0, 0.22);
+}
+@media (max-width: 40em) {
+  .button-label {
+    padding: 0em 1em 3px;
+    margin: 0.25em;
+  }
+}
+
+#radio-lb:checked + .button-label,
+#radio-oz:checked + .button-label {
+  background: #7142FF;
+  color: #efefef;
+}
+#radio-lb:checked + .button-label:hover,
+#radio-oz:checked + .button-label:hover {
+  background: #5A27F2;
+  color: #e2e2e2;
+}
+
+.hidden {
+  display: none;
 }

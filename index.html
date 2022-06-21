@@ -24,16 +24,30 @@
       <section class="calc">
         <form action="">
           <label for="price">Price</label>
-          <br/>
-          <input type="text" name="price" placeholder="$0.00" id="price">
-          <br/>
+          <input type="number" name="price" placeholder="$0.00" id="price">
           <br/>
           <label for="quantity">Quantity</label>
+          <input type="number" name="quantity" placeholder="0" id="quantity">
           <br/>
-          <input type="text" name="quantity" placeholder="0" id="quantity">
 
-          <input type="radio" name="units" value="lb" id="radio-lb" checked> lb
-          <input type="radio" name="units" value="oz" id="radio-oz"> oz
+          <!--BUTTONS-->
+          <!-- <input type="radio" name="radio" value="lb" id="radio-lb" checked> lb
+          <input type="radio" name="radio" value="oz" id="radio-oz"> oz -->
+
+
+          <div class="container">
+            <div class="button-wrap">
+              <input class="hidden radio-label" type="radio" name="radio" id="radio-lb" checked="checked"/>
+              <label class="button-label" for="radio-lb">
+                <h1>lb</h1>
+              </label>
+              <input class="hidden radio-label" type="radio" name="radio" id="radio-oz"/>
+              <label class="button-label" for="radio-oz">
+                <h1>oz</h1>
+              </label>
+            </div>
+          </div>
+
 
           <br/>
           <br/>
