@@ -20,15 +20,17 @@
 
     <h1>Price Per Pound</h1>
 
-    <div class="calc wrapper">
+    <div class="calc-wrapper">
       <section class="calc">
         <form action="">
-          <label for="price">Price</label>
-          <input type="number" name="price" placeholder="$0.00" id="price">
-          <br/>
-          <label for="quantity">Quantity</label>
-          <input type="number" name="quantity" placeholder="0" id="quantity">
-          <br/>
+          <div class="price-wrap">
+              <label for="price">Price</label>
+              <input type="number" name="price" placeholder="$0.00" id="price">
+          </div>
+          <div class="quantity-wrap">
+            <label for="quantity">Quantity</label>
+            <input type="number" name="quantity" placeholder="0" id="quantity">
+          </div>
 
           <!--BUTTONS-->
           <!-- <input type="radio" name="radio" value="lb" id="radio-lb" checked> lb
