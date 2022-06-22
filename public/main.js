@@ -2,6 +2,11 @@ let price = document.getElementById('price')
 let quantity = document.getElementById('quantity')
 let output = document.getElementById('output')
 
+const formatter = new Intl.NumberFormat('en-US', {
+  minimumFractionDigits: 2,
+  maximumFractionDigits: 2,
+})
+
 const showCalc = _ => {
   const getUnit = _ => {
     return document.getElementById('radio-lb').checked
@@ -21,8 +26,8 @@ const ozToPounds = oz => {
 
 const pricePerPound = (price, quantity, unit) => {
   return unit === 'oz'
-  ? price / ozToPounds(quantity)
-  : price / quantity
+  ? formatter.format(price / ozToPounds(quantity))
+  : formatter.format(price / quantity)
 }
 
 quantity.oninput = showCalc
