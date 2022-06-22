@@ -23,12 +23,19 @@
 
 html, body {
   font-family: 'Titillium Web', sans-serif;
+  height: 100%;
 }
 
 body {
   background-color: rgb(160, 142, 206);
   font-size: 62.5%;
   color: azure;
+}
+
+.body-wrap {
+  min-height: 100%;
+  position: relative;
+  padding-bottom:90px; /* footer's height */
 }
 
 .calc-wrapper {
@@ -163,7 +170,9 @@ input {
   display: none;
 }
 
-/* Footer */
+/******************************************
+/* FOOTER
+/*******************************************/
 
 #footer {
   display: flex;
@@ -175,9 +184,10 @@ input {
   color: rgba(185, 186, 187, 0.5);
   overflow: hidden;
 
-  position:absolute;
-  bottom:0;
-  width:100%;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
 }
 
   #footer > * {
