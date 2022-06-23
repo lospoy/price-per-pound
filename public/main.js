@@ -34,8 +34,8 @@ quantity.oninput = showCalc
 document.getElementById('radio-lb').addEventListener('click', showCalc)
 document.getElementById('radio-oz').addEventListener('click', showCalc)
 
-document.querySelector(function() {
+function footerFix() {
   var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
   var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
   document.querySelector("html, body").css({"width":w,"height":h});
-});
+};
