@@ -34,10 +34,8 @@ quantity.oninput = showCalc
 document.getElementById('radio-lb').addEventListener('click', showCalc)
 document.getElementById('radio-oz').addEventListener('click', showCalc)
 
-function footerFix() {
-  let w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-  let h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-  $("html, body").css({"width":w,"height":h});
-}
-
-footerFix()
+document.querySelector(function() {
+  var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+  var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+  document.querySelector("html, body").css({"width":w,"height":h});
+});
