@@ -243,11 +243,11 @@ footer {
     }
 
     .title {
-      margin-top: -20vh;
+      margin-top: -15vh;
     }
 
     .calc-wrapper {
-      min-height: 85vh;
+      min-height: 75vh;
       display: flex;
     }
 
