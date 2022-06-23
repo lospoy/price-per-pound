@@ -238,13 +238,20 @@ footer {
 
   @media screen and (max-width: 736px) {
 
+    body {
+      margin-bottom: 0;
+    }
+
+    footer {
+      position: relative;
+    }
+
     #footer ul.menu li {
       border-left: none;
       display: block;
       line-height: inherit;
       margin: 0.25em 0 0 0;
       padding: 0.25em 0 0 0;
-      position: relative;
     }
 
       #footer ul.menu li:first-child {
