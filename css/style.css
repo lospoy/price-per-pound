@@ -180,7 +180,14 @@ input:focus {
 /* FOOTER
 /*******************************************/
 
-#footer {
+.footer-wrap {
+  overflow: hidden;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -188,11 +195,8 @@ input:focus {
   padding: 1.5em;
   background: rgb(145, 116, 218);
   color: rgba(185, 186, 187, 0.5);
-  overflow: hidden;
-  position: fixed;
   width: 100%;
   border: 0;
-  bottom: 0;
 }
 
   #footer > * {
