@@ -33,3 +33,5 @@ const pricePerPound = (price, quantity, unit) => {
 quantity.oninput = showCalc
 document.getElementById('radio-lb').addEventListener('click', showCalc)
 document.getElementById('radio-oz').addEventListener('click', showCalc)
+
+// moving this project to a MERN stack
