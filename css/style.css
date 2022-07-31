@@ -43,7 +43,7 @@ body {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  inline-margin: 0 auto;
+  margin-inline: 0 auto;
 }
 
 h1 {
